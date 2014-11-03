@@ -1,0 +1,4 @@
+.deck-container:not(.deck-menu) > .slide {
+	top: 60px !important;
+	left: 120px !important;
+}
