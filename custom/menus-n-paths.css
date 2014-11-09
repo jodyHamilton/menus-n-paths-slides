@@ -1,4 +1,54 @@
 .deck-container:not(.deck-menu) > .slide {
-	top: 60px !important;
-	left: 120px !important;
+	top: 120px !important;
+	left: 240px !important;
+	width: 1000px !important;
+}
+
+h1 {
+  color: #5BCF5D;
+  text-shadow: 0 0 50px #5BCF5D, 0 0 3px #fff;
+}
+
+h2 {
+	color: #8661F1;
+	text-shadow: 0 0 15px #8661F1, 0 0 2px #fff;
+	margin-bottom: 20px;
+}
+
+input.path {
+	margin: 20px;
+	padding-left: 10px;
+}
+
+.main-menu li {
+	float: left;
+	list-style: none;
+	margin-right: 30px;
+}
+
+.main-menu {
+	margin-left: 288px;
+	float: left;
+}
+
+.side-menu {
+	clear: left;
+	margin-top: 160px;
+	width: 228px;
+}
+
+.breadcrumb {
+	margin-bottom: 20px;
+	background: lightgrey;
+	padding: 5px;
+	width: 600px;
+}
+
+a.active {
+	color: #EF751C;
+}
+
+img {
+	display: inline;
+	margin: 20px;
 }
