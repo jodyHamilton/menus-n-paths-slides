@@ -64,7 +64,7 @@ function update(to) {
 
   $(".breadcrumb").empty();
   breadcrumb_populate(to);
-  $(".breadcrumb").prepend('<a href="menus-n-paths.html#slide-1">Home</a>');
+  $(".breadcrumb").prepend('<a href="menus-n-paths.html">Home</a>');
 
   $("a").each(function() {
   	 $(this).removeClass('active');

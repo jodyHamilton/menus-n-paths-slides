@@ -1,6 +1,6 @@
 .deck-container:not(.deck-menu) > .slide {
 	top: 120px !important;
-	left: 240px !important;
+	left: 260px !important;
 	width: 1000px !important;
 }
 
@@ -27,7 +27,7 @@ input.path {
 }
 
 .main-menu {
-	margin-left: 288px;
+	margin-left: 308px;
 	float: left;
 }
 
