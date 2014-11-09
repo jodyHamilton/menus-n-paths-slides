@@ -41,7 +41,7 @@ function side_menu() {
 
 function path() {
 	var path =
-	 '<input class="path" type="text" value="http://menus-n-paths.local/definitions" size="60">';
+	 '<input class="path" type="text" value="http://menus-n-paths.local/about/definitions" size="60">';
 	 return path;
 }
 
