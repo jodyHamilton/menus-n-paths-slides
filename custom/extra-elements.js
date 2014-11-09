@@ -24,7 +24,7 @@ $(document).bind('deck.change', function(event, from, to) {
 function main_menu() {
 	 var menu =
 	 '<ul class="main-menu"> \
-    <li><a href="menus-n-paths.html#slide-3">Definitions</a></li> \
+    <li><a href="menus-n-paths.html">About</a></li> \
     <li><a href="menus-n-paths.html#slide-6">Menus</a></li> \
     <li><a href="menus-n-paths.html#slide-12">Paths</a></li> \
     <li><a href="menus-n-paths.html#slide-18">Breadcrumbs</a></li> \
@@ -90,6 +90,8 @@ function update(to) {
 
 function slide_numbers() {
   return {
+   1:'About',
+   2:'Jody',
    3:'Definitions',
    4:'Definitions',
    5:'Definitions',
@@ -108,13 +110,14 @@ function slide_numbers() {
    18:'Breadcrumbs',
    19:'Drupal 7',
    20:'Drupal 8',
-   21:'Bear'
+   21:'Bear',
+   22:'Questions'
 	};
 }
 
 function tree_parents() {
 	return {
-  'Definitions':0,
+
   'Menus':0,
   'Paths':0,
   'The Main Menu':'Menus',
@@ -131,7 +134,11 @@ function tree_parents() {
   'Breadcrumbs': 0,
   'Drupal 7':'Breadcrumbs',
   'Drupal 8':'Breadcrumbs',
-  'Bear':'Breadcrumbs'
+  'About':0,
+  'Jody':'About',
+  'Definitions':'About',
+  'Bear':'About',
+  'Questions':'About'
 	};
 }
 
@@ -170,7 +177,10 @@ function sidemenu_populate(to) {
 		if (treeParents[title] == parent) {
 		  for (var link in slideNumbers) {
 		   	if (slideNumbers[link] == title) {
-		   		$(".side-menu").append("<li><a href='menus-n-paths.html#slide-"+link+"'>"+title+"</a></li>");
+          if (lasttitle != title) {
+          	$(".side-menu").append("<li><a href='menus-n-paths.html#slide-"+link+"'>"+title+"</a></li>");
+          }
+		   	  var lasttitle = title;
 		   	}
 		  }
 		}

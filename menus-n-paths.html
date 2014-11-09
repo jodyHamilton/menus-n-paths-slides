@@ -36,9 +36,11 @@
 
     <section class="slide">
       <h1>Perfecting Menus, Paths and Breadcrumbs</h1>
+      <div hidden class="current-path">about</div>
     </section>
 
     <section class="slide">
+      <div hidden class="current-path">about/jody</div>
       <h2>Jody Hamilton</h2>
       <p>CTO of Zivtech</p>
       <p>Drupal architect, developer, site builder, trainer and contributor</p>
@@ -47,7 +49,7 @@
     </section>
 
     <section class="slide">
-      <div hidden class="current-path">definitions</div>
+      <div hidden class="current-path">about/definitions</div>
       <h2>Definitions</h2>
       <ul>
         <li class="slide">Menus</li>
@@ -91,6 +93,11 @@
     <section class="slide">
       <div hidden class="current-path">menus/hall-of-shame</div>
       <h2>Menu Hall of Shame</h2>
+      <ul>
+        <li>Hand-made menus</li>
+        <li>Crowded menus</li>
+        <li>Too many menus</li>
+      </ul>
     </section>
     <section class="slide">
       <div hidden class="current-path">menus/menu-contrib</div>
@@ -114,18 +121,21 @@
     </section>
     <section class="slide">
       <div hidden class="current-path">paths/restful</div>
-      <h2>A path is RESTful</h2>
+      <h2>A path should be RESTful</h2>
+      <p>"Clean" & Human-readable is not enough</p>
       <ul>
         <li>stateless</li>
         <li>hackable</li>
         <li>unique</li>
       </ul>
+      <p>For stateless paths, remember a page <> a node</p>
     </section>
     <section class="slide">
       <div hidden class="current-path">paths/canonical-paths</div>
       <h2>Canonical Paths</h2>
       <p>Drupal 8 has working canonical paths!</p>
       <p>https://www.drupal.org/node/1160764</p>
+      <p>Paths are also more stateless in D8</p>
     </section>
     <section class="slide">
       <div hidden class="current-path">paths/pathauto</div>
@@ -151,20 +161,24 @@
       <div hidden class="current-path">paths/paths-hall-of-shame</div>
       <h2>Paths Hall of Shame</h2>
         <ul>
-          <li>Authorize.net</li>
+          <li>Javascript-only links</li>
+          <li>Separate mobile sites</li>
+          <li>Unhackable paths</p>
         </ul>
     </section>
+
+
     <section class="slide">
       <div hidden class="current-path">breadcrumbs</div>
       <h2>Breadcrumbs</h2>
       <p>A human-readable path</p>
-      <p>"the children find that birds have eaten the crumbs and they are lost in the woods"</p>
+      <h3><em>"the children find that birds have eaten the crumbs and they are lost in the woods"</em></h3>
     </section>
     <section class="slide">
       <div hidden class="current-path">breadcrumbs/drupal-7</div>
       <h2>Breadcrumbs in Drupal 7</h2>
       <p>Based on menu positions. But menu positions have no system canonicalness.</p>
-      <p>Many contrib modules</p>
+      <p>Many contrib modules to help:</p>
       <ul>
         <li>Custom breadcrumbs</li>
         <li>Menu position</li>
@@ -181,10 +195,15 @@
       <p>http://www.palantir.net/blog/d8ftw-breadcrumbs-work</p>
       <p>path-based!</p>
     </section>
+
     <section class="slide">
-      <div hidden class="current-path">breadcrumbs/bear</div>
+      <div hidden class="current-path">about/bear</div>
       <h2>Bear Distribution</h2>
       <img src="custom/bear.jpg"/>
+    </section>
+    <section class="slide">
+      <h1>Questions</h1>
+      <div hidden class="current-path">about/questions</div>
     </section>
 
     <!-- End slides. -->
