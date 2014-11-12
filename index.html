@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Perfecting Menus, Paths, and Breadcrumbs</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/neon.css">
+  <link rel="stylesheet" media="screen" href="custom/menus-n-paths.css">
+
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <section class="slide">
+      <h1>Perfecting Menus, Paths and Breadcrumbs</h1>
+      <div hidden class="current-path">about</div>
+    </section>
+
+    <section class="slide">
+      <div hidden class="current-path">about/jody</div>
+      <h2>Jody Hamilton</h2>
+      <p>CTO of Zivtech</p>
+      <p>Drupal architect, developer, site builder, trainer and contributor</p>
+      <p>Jody Lynn @ drupal.org</p>
+      <p>@JodyHamilton</p>
+    </section>
+
+    <section class="slide">
+      <div hidden class="current-path">about/definitions</div>
+      <h2>Definitions</h2>
+      <ul>
+        <li class="slide">Menus</li>
+        <li class="slide">Paths</li>
+        <li class="slide">Breadcrumbs</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div hidden class="current-path">menus</div>
+      <h2>A Menu is a Tree</h2>
+      <h3>One site : One tree</h3>
+      <h3>One page : One position</h3>
+      <img src="custom/tree.png" width="200px"/>
+      <img src="custom/GenericFolderIcon.png" width="200px"/>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">menus/the-main-menu</div>
+      <h2>The Main Menu Tree & The Menu-ish</h2>
+      <h3>Common <em>Menu-ish</em> Menus</h3>
+      <ul>
+        <li>Footer Menu</li>
+        <li>User Menu</li>
+        <li>Task-based Menu</li>
+        <li>Organic Groups Menus</li>
+      </ul>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">menus/canonical-menu-positions</div>
+      <h2>Canonical Menu Positions & Core Problems</h2>
+      <p>One page, one path, one breadcrumb, multiple menu items?</p>
+      <p>Canonical: We can have more than one but one is <em>special</em></p>
+      https://www.drupal.org/node/1875824
+              <!-- use panels for multi context pages -->
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">menus/menu-block</div>
+      <h2>Menu Block</h2>
+      The only menu display you need
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">menus/hall-of-shame</div>
+      <h2>Menu Hall of Shame</h2>
+      <ul>
+        <li>Hand-made menus</li>
+        <li>Crowded menus</li>
+        <li>Too many menus</li>
+      </ul>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">menus/menu-contrib</div>
+      <h2>Menu Contrib</h2>
+      <ul>
+        <li>Admin menu</li>
+        <li>Menu Position</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div hidden class="current-path">paths</div>
+      <h2>A path is an address</h2>
+      <p>URLs are part of your</p>
+      <ul>
+        <li>UI</li>
+        <li>Design (though missing from most mockups)</li>
+        <li>Navigation</li>
+        <li>Self-respect</li>
+      </ul>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">paths/restful</div>
+      <h2>A path should be RESTful</h2>
+      <p>"Clean" & Human-readable is not enough</p>
+      <ul>
+        <li>stateless</li>
+        <li>hackable</li>
+        <li>unique</li>
+      </ul>
+      <p>For stateless paths, remember a page <> a node</p>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">paths/canonical-paths</div>
+      <h2>Canonical Paths</h2>
+      <p>Drupal 8 has working canonical paths!</p>
+      <p>https://www.drupal.org/node/1160764</p>
+      <p>Paths are also more stateless in D8</p>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">paths/pathauto</div>
+      <h2>Pathauto Mastery</h2>
+      <ul>
+        <li>Pages: [node:menu-link:parents:join-path]/[node:title]</li>
+        <li>Event: events/[node:title]</li>
+        <li>Bio: people/[node:title]</li>
+      </ul>
+      <p>Change pathauto updating settings on launch</p>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">paths/path-contrib</div>
+      <h2>Path Contrib Modules</h2>
+      <ul>
+        <li>Global Redirect</li>
+        <li>Redirect</li>
+        <li>Linkit</li>
+        <li>Pathologic</li>
+      </ul>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">paths/paths-hall-of-shame</div>
+      <h2>Paths Hall of Shame</h2>
+        <ul>
+          <li>Javascript-only links</li>
+          <li>Separate mobile sites</li>
+          <li>Unhackable paths</p>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+      <div hidden class="current-path">breadcrumbs</div>
+      <h2>Breadcrumbs</h2>
+      <p>A human-readable path</p>
+      <h3><em>"the children find that birds have eaten the crumbs and they are lost in the woods"</em></h3>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">breadcrumbs/drupal-7</div>
+      <h2>Breadcrumbs in Drupal 7</h2>
+      <p>Based on menu positions. But menu positions have no system canonicalness.</p>
+      <p>Many contrib modules to help:</p>
+      <ul>
+        <li>Custom breadcrumbs</li>
+        <li>Menu position</li>
+        <li>Menu breadcrumb</li>
+        <li>Crumbs</li>
+        <li>Hansel breadcrumbs</li>
+        <li>Path Breadcrumbs</li>
+        <li><h3>Breadcrumbs by Path</h3></li>
+      </ul>
+    </section>
+    <section class="slide">
+      <div hidden class="current-path">breadcrumbs/drupal-8</div>
+      <h2>Breadcrumbs in Drupal 8</h2>
+      <p>http://www.palantir.net/blog/d8ftw-breadcrumbs-work</p>
+      <p>path-based!</p>
+    </section>
+
+    <section class="slide">
+      <div hidden class="current-path">about/bear</div>
+      <h2>Bear Distribution</h2>
+      <img src="custom/bear.jpg"/>
+    </section>
+    <section class="slide">
+      <h1>Questions</h1>
+      <div hidden class="current-path">about/questions</div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<script src="custom/extra-elements.js"></script>
+
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
