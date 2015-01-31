@@ -90,8 +90,9 @@ function update(to) {
 
 function slide_numbers() {
   return {
-   1:'About',
-   2:'Jody',
+   0:'About',
+   1:'Jody',
+   2:'Definitions',
    3:'Definitions',
    4:'Definitions',
    5:'Definitions',
