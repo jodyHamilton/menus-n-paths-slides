@@ -23,25 +23,31 @@ $(document).bind('deck.change', function(event, from, to) {
 
 function main_menu() {
 	 var menu =
-	 '<ul class="main-menu"> \
-    <li><a href="menus-n-paths.html">About</a></li> \
+	 '<div class="main-menu-wrapper"> \
+    <ul class="main-menu"> \
+    <li><a href="menus-n-paths.html#slide-3">Definitions</a></li> \
     <li><a href="menus-n-paths.html#slide-6">Menus</a></li> \
     <li><a href="menus-n-paths.html#slide-12">Paths</a></li> \
     <li><a href="menus-n-paths.html#slide-18">Breadcrumbs</a></li> \
-  </ul>';
+  </ul> \
+  </div>';
  return menu;
 }
 
 function side_menu() {
 	 var menu =
-	 '<ul class="side-menu"> \
-  </ul>';
+   '<div class="side-menu-wrapper"> \
+	 <ul class="side-menu"> \
+  </ul> \
+  </div>';
  return menu;
 }
 
 function path() {
 	var path =
-	 '<input class="path" type="text" value="http://menus-n-paths.local/about/definitions" size="60">';
+	 '<div class="path-wrapper"> \
+   <input class="path" type="text" value="http://menus-n-paths.local/definitions" size="60"> \
+   </div>';
 	 return path;
 }
 
