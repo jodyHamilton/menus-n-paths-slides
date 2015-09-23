@@ -149,11 +149,11 @@ works fine.
     scaleDebounce: 200
   });
 
-  /*
+  
   jQuery.deck('disableScale')
 
   Disables scaling and removes the scale class from the deck container.
-  */
+  
   $.deck('extend', 'disableScale', function() {
     $.deck('getContainer').removeClass($.deck('getOptions').classes.scale);
     scaleDeck();
