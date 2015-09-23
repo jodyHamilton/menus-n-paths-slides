@@ -25,7 +25,7 @@ function main_menu() {
 	 var menu =
 	 '<div class="main-menu-wrapper"> \
     <ul class="main-menu"> \
-    <li><a href="menus-n-paths.html#slide-3">Definitions</a></li> \
+    <li><a href="menus-n-paths.html#slide-0">About</a></li> \
     <li><a href="menus-n-paths.html#slide-6">Menus</a></li> \
     <li><a href="menus-n-paths.html#slide-12">Paths</a></li> \
     <li><a href="menus-n-paths.html#slide-18">Breadcrumbs</a></li> \
